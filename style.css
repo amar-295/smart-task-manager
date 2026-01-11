@@ -1,0 +1,93 @@
+/* 1. General Page Styling */
+body {
+    background: #1e1e2f; /* Dark Blue Background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full screen height */
+    margin: 0;
+}
+
+/* 2. The Card (Container) */
+.container {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); /* Cool shadow effect */
+}
+
+/* 3. The Header */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* 4. The Input Row */
+.row {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1; /* Takes up remaining space */
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+}
+
+#task-add-btn {
+    padding: 12px 20px;
+    border: none;
+    background: #ff5e57; /* Nice Red/Orange */
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#task-add-btn:hover {
+    background: #ff3b30; /* Darker on hover */
+}
+
+/* 5. The Task List */
+ul {
+    padding: 0;
+    list-style: none; /* Remove bullet points */
+}
+
+/* 6. Individual Tasks */
+li {
+    background: #f4f4f9;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Pushes delete button to the right */
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s; /* Smooth animation */
+}
+
+li:hover {
+    background: #e0e0e0;
+}
+
+/* 7. The Delete Button (Inside the task) */
+li button {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background: #333;
+}
